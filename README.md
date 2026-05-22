@@ -2,9 +2,6 @@
 
 Endpoint detection for speech signals using **Short-Term Energy (STE)** and **Zero-Crossing Rate (ZCR)**. The implementation handles single words as well as multi-word utterances in both Persian and English, and includes a refinement step that prevents Persian words with weak fricatives (like *سعید* or *آفتاب*) from being incorrectly split into multiple words.
 
-> Master's coursework project — Speech Processing course, Alzahra University, Spring 2017.
-> Supervisor: Dr. Noushin Riahi.
-
 ---
 
 ## The problem
@@ -20,8 +17,6 @@ Two classical features, used together:
 
 A `syllable_threshold` parameter then checks whether two detected words are close enough that they should be merged into one — this is what keeps words like *سعید* from being incorrectly returned as two separate utterances.
 
-The full algorithm, including the flowchart and threshold derivations, is documented in [`docs/project_report.pdf`](docs/project_report.pdf) (in Persian).
-
 ## Repository layout
 
 ```
@@ -30,7 +25,6 @@ speech-endpoint-detection/
 │   └── double_word_V1.m     # the endpoint detection algorithm
 ├── audio/                    # sample recordings used in the report and slides
 └── docs/
-    ├── project_report.pdf    # full report (Persian)
     └── presentation.pptx     # course presentation
 ```
 
@@ -85,12 +79,7 @@ Key works the implementation draws on:
 - L. F. Lamel, L. R. Rabiner, A. E. Rosenberg, and J. G. Wilpon, "An improved endpoint detector for isolated word recognition," *IEEE Trans. ASSP*, vol. 29, no. 4, Aug. 1981.
 - B. S. Atal and L. R. Rabiner, "A pattern recognition approach to voiced-unvoiced-silence classification with application to speech recognition," *IEEE Trans. ASSP*, vol. 24, June 1976.
 
-The full reference list is in the project report.
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
 
-## Author
-
-**Soheila Ansari** — [github.com/SoheilaAnsari](https://github.com/SoheilaAnsari)
