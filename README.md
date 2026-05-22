@@ -22,10 +22,8 @@ A `syllable_threshold` parameter then checks whether two detected words are clos
 ```
 speech-endpoint-detection/
 ├── src/
-│   └── double_word_V1.m     # the endpoint detection algorithm
-├── audio/                    # sample recordings used in the report and slides
-└── docs/
-    └── presentation.pptx     # course presentation
+│   └── double_word_V1.m     # the endpoint detection algorithm                    
+└── audio/                   # sample recordings used in the report and slides
 ```
 
 ## Running the code
